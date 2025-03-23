@@ -1,0 +1,11 @@
+einops
+matplotlib
+numpy
+pandas
+Pillow
+scikit_learn
+scipy
+setuptools
+torch
+torchvision
+tqdm
