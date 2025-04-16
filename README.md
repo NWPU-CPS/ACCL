@@ -65,6 +65,9 @@ Download and extract the datasets following the folder structure below:
 ```
 
 ### Training & Evaluation
+
+Before Running, You need to change the path in the cfgops/{dataset_name}/*.py, which describe the data path and model output path.
+
 Run the main script:
 ```bash
 python jupiter.py

@@ -39,6 +39,19 @@ class JupyterDataLoaderFactory(object):
         if entry.name == "lvf.dssentropy":
             from dl.lvf import JupiterLvfDssEntropyDataset
             return JupiterLvfDssEntropyDataset.getTrainDataLoader(dcfg, entry)
+        
+        if entry.name == 'parisf.triplet':
+            from dl.parisf import JupiterParisfTripletDataset
+            return JupiterParisfTripletDataset
+        if entry.name == "parisf.dss":
+            from dl.parisf import JupiterParisfDssDataset
+            return JupiterParisfDssDataset.getTrainDataLoader(dcfg, entry)
+        if entry.name == "parisf.dssaccl":
+            from dl.parisf import JupiterParisfDssAcclDataset
+            return JupiterParisfDssAcclDataset.getTrainDataLoader(dcfg, entry)
+        if entry.name == "parisf.dssentropy":
+            from dl.parisf import JupiterParisfDssEntropyDataset
+            return JupiterParisfDssEntropyDataset.getTrainDataLoader(dcfg, entry)
 
         raise ValueError("DataLoader not registered: {}".format(entry))
 
@@ -53,4 +66,8 @@ class JupyterDataLoaderFactory(object):
         if entry.name == "lvf.raw":
             from dl.lvf import JupiterLvfRawDataset
             return JupiterLvfRawDataset.getRawDataLoader(dcfg, entry)
+        if entry.name == "parisf.raw":
+            from dl.parisf import JupiterParisfRawDataset
+            return JupiterParisfRawDataset.getRawDataLoader(dcfg, entry)
+        
         raise ValueError("DataLoader not registered: {}".format(entry))

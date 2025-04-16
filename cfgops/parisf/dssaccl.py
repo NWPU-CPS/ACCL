@@ -23,6 +23,17 @@ def insampleEvalEntry():
     return entry
 
 
+def validateEntry():
+    entry = dconfig.DataDssConfigEntry()
+    entry.name = "parisf.raw"
+    entry.queryDir = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Test/query_images"
+    entry.referenceDir = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/reference_images"
+    entry.matchFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Test/gt_matches.csv"
+    entry.queryPosFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Test/query.csv"
+    entry.referencePosFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Test/reference.csv"
+    return entry
+
+
 def evalEntry():
     entry = dconfig.DataDssConfigEntry()
     entry.name = "parisf.raw"
@@ -37,6 +48,7 @@ def evalEntry():
 def dcfg(tags):
     dcfg = dconfig.DataConfig()
     dcfg.trainEntry = trainEntry()
+    dcfg.validateEntry = validateEntry()
     dcfg.insampleEvalEntry = insampleEvalEntry()
     dcfg.evalEntry = evalEntry()
     return dcfg.enrich(tags)
