@@ -3,11 +3,11 @@ from config import mconfig, dconfig
 
 def trainEntry():
     entry = dconfig.DataDssConfigEntry()
-    entry.name = "parisf.dss"
+    entry.name = "parisf.dssaccl"
     entry.queryDir = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Train/query_images"
     entry.referenceDir = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/reference_images"
-    entry.matchFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Train/gt_matches.csv"
-    entry.queryPosFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Train/query.csv"
+    entry.matchFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Train/gt_matches_filtered.csv"
+    entry.queryPosFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Train/query_filtered.csv"
     entry.referencePosFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Train/reference.csv"
     return entry
 
@@ -17,8 +17,8 @@ def insampleEvalEntry():
     entry.name = "parisf.raw"
     entry.queryDir = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Train/query_images"
     entry.referenceDir = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/reference_images"
-    entry.matchFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Train/gt_matches.csv"
-    entry.queryPosFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Train/query.csv"
+    entry.matchFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Train/gt_matches_filtered.csv"
+    entry.queryPosFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Train/query_filtered.csv"
     entry.referencePosFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Train/reference.csv"
     return entry
 
@@ -28,8 +28,8 @@ def validateEntry():
     entry.name = "parisf.raw"
     entry.queryDir = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Test/query_images"
     entry.referenceDir = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/reference_images"
-    entry.matchFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Test/gt_matches.csv"
-    entry.queryPosFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Test/query.csv"
+    entry.matchFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Test/gt_matches_filtered.csv"
+    entry.queryPosFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Test/query_filtered.csv"
     entry.referencePosFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Test/reference.csv"
     return entry
 
@@ -39,8 +39,8 @@ def evalEntry():
     entry.name = "parisf.raw"
     entry.queryDir = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Test/query_images"
     entry.referenceDir = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/reference_images"
-    entry.matchFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Test/gt_matches.csv"
-    entry.queryPosFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Test/query.csv"
+    entry.matchFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Test/gt_matches_filtered.csv"
+    entry.queryPosFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Test/query_filtered.csv"
     entry.referencePosFile = "/z5s/cps/data/geo/Paris_fly/Paris_ArcDeTriomphe/Test/reference.csv"
     return entry
 
