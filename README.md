@@ -1,8 +1,8 @@
-# ACCL: A Plug-and-Play Adaptive Confusion-Aware Contrastive Loss for UAV-to-Satellite
+# ACCL: A Plug-and-Play Adaptive Confusion-Aware Contrastive Loss for UAV-to-Satellite Geolocalization
 
 Welcome to the official repository for our ICME-accepted paper:
 
-**"ACCL: A Plug-and-Play Adaptive Confusion-Aware Contrastive Loss for UAV-to-Satellite."**
+**"ACCL: A Plug-and-Play Adaptive Confusion-Aware Contrastive Loss for UAV-to-Satellite Geolocalization."**
 
 This repository contains training and inference code for ACCL, a novel loss function designed to enhance contrastive learning by adapting to confusion in UAV-to-satellite retrieval tasks.
 
@@ -80,7 +80,7 @@ If you find this work useful, please consider citing our paper:
 ```
 @inproceedings{your_citation,
   author    = {Your Name and Co-authors},
-  title     = {ACCL: A Plug-and-Play Adaptive Confusion-Aware Contrastive Loss for UAV-to-Satellite},
+  title     = {ACCL: A Plug-and-Play Adaptive Confusion-Aware Contrastive Loss for UAV-to-Satellite Geolocalization},
   booktitle = {Proceedings of ICME},
   year      = {2025},
 }
