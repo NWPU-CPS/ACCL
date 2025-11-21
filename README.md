@@ -79,14 +79,16 @@ For each dataset, execute the corresponding configuration script. Pre-trained we
 If you find this work useful, please consider citing our paper:
 Notice: below cite is not the final version, the pages is incorrect.
 ```
-@inproceedings{zhu2025accl,
-  title={ACCL: A Plug-and-Play Adaptive Confusion-Aware Contrastive Loss for UAV-to-Satellite Geolocalization},
+@INPROCEEDINGS{11209371,
   author={Zhu, Yining and Deng, Zihao and Wang, Junbo and Li, Boxuan and Xiao, Long and Shen, Jikun and Yao, Yuan},
-  booktitle={2025 IEEE International Conference on Multimedia and Expo (ICME)},
-  pages={1--6},
+  booktitle={2025 IEEE International Conference on Multimedia and Expo (ICME)}, 
+  title={ACCL: A Plug-and-play Adaptive Confusion-aware Contrastive Loss for UAV-to-Satellite Geolocalization}, 
   year={2025},
-  organization={IEEE}
-}
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Measurement;Adaptation models;Visualization;Codes;Geology;Image matching;Autonomous aerial vehicles;Satellite images;geolocalization;image matching;contrastive loss},
+  doi={10.1109/ICME59968.2025.11209371}}
 ```
 
 ## Contact
